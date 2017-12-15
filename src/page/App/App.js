@@ -1,40 +1,29 @@
 import React, { Component } from 'react';
-
 import './App.css';
-import { Image, Button, Icon } from 'semantic-ui-react'
+import { Image, Icon,Header } from 'semantic-ui-react';
+import BackgroundSlideshow from 'react-background-slideshow'
+import image1 from '../../styles/mood1430x800.jpg'
 
-import Background from '../../styles/mood1430x633.jpg';
-
-const sectionStyle = {
-  width: "80%",
-  height: "400px",
-  backgroundImage: "url(" + { Background } + ")",
- 
-
-};
 
 class App extends Component {
 
   render() {
     return (
 
-      <div style={sectionStyle}>
-        <img src={Background} />
+      <div>
+        <div class= 'img'><BackgroundSlideshow images={[ image1, image1, image1 ]} /></div>
         <div class='mid' >
           <a href='/news' >
-
-            <Button size='massive' color='black' >
-              ENETER SITE
-                <Icon name='right arrow' />
-            </Button>
+          <Header color='red' size="huge" >
+              Sharing Our Heart
+            </Header>
           </a>
         </div>
-
       </div>
+      
+
     );
   }
 }
-
-
 
 export default App;

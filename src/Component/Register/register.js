@@ -6,6 +6,7 @@ import './register.css';
 import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
 
 const ModalExampleScrollingContent = () => (
+    
     <Modal trigger={<Button>Sign Up</Button>}>
 
         <Modal.Content scrolling>
